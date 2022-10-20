@@ -44,7 +44,7 @@
             this.txt_chave.Location = new System.Drawing.Point(12, 12);
             this.txt_chave.Name = "txt_chave";
             this.txt_chave.Size = new System.Drawing.Size(40, 20);
-            this.txt_chave.TabIndex = 0;
+            this.txt_chave.TabIndex = 1;
             this.txt_chave.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txt_chave.TextChanged += new System.EventHandler(this.txt_chave_TextChanged);
             this.txt_chave.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_chave_KeyPress);
@@ -59,7 +59,7 @@
             this.btn_criptar.Location = new System.Drawing.Point(12, 235);
             this.btn_criptar.Name = "btn_criptar";
             this.btn_criptar.Size = new System.Drawing.Size(75, 30);
-            this.btn_criptar.TabIndex = 1;
+            this.btn_criptar.TabIndex = 3;
             this.btn_criptar.Text = "Criptar";
             this.btn_criptar.UseVisualStyleBackColor = false;
             this.btn_criptar.Click += new System.EventHandler(this.btn_criptar_Click);
@@ -82,16 +82,17 @@
             this.txt_cripto.Multiline = true;
             this.txt_cripto.Name = "txt_cripto";
             this.txt_cripto.Size = new System.Drawing.Size(428, 97);
-            this.txt_cripto.TabIndex = 3;
+            this.txt_cripto.TabIndex = 2;
             this.txt_cripto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.btn_criptar_KeyPress);
             // 
             // txt_decripto
             // 
+            this.txt_decripto.Enabled = false;
             this.txt_decripto.Location = new System.Drawing.Point(12, 141);
             this.txt_decripto.Multiline = true;
             this.txt_decripto.Name = "txt_decripto";
             this.txt_decripto.Size = new System.Drawing.Size(428, 90);
-            this.txt_decripto.TabIndex = 4;
+            this.txt_decripto.TabIndex = 7;
             // 
             // btn_decriptar
             // 
@@ -103,7 +104,7 @@
             this.btn_decriptar.Location = new System.Drawing.Point(133, 235);
             this.btn_decriptar.Name = "btn_decriptar";
             this.btn_decriptar.Size = new System.Drawing.Size(76, 30);
-            this.btn_decriptar.TabIndex = 5;
+            this.btn_decriptar.TabIndex = 4;
             this.btn_decriptar.Text = "Decriptar";
             this.btn_decriptar.UseVisualStyleBackColor = false;
             this.btn_decriptar.Click += new System.EventHandler(this.btn_decriptar_Click);
@@ -118,7 +119,7 @@
             this.btn_limpar.Location = new System.Drawing.Point(251, 235);
             this.btn_limpar.Name = "btn_limpar";
             this.btn_limpar.Size = new System.Drawing.Size(75, 30);
-            this.btn_limpar.TabIndex = 6;
+            this.btn_limpar.TabIndex = 5;
             this.btn_limpar.Text = "Limpar";
             this.btn_limpar.UseVisualStyleBackColor = false;
             this.btn_limpar.Click += new System.EventHandler(this.btn_limpar_Click);
@@ -133,7 +134,7 @@
             this.btn_sair.Location = new System.Drawing.Point(365, 235);
             this.btn_sair.Name = "btn_sair";
             this.btn_sair.Size = new System.Drawing.Size(75, 30);
-            this.btn_sair.TabIndex = 7;
+            this.btn_sair.TabIndex = 6;
             this.btn_sair.Text = "Sair";
             this.btn_sair.UseVisualStyleBackColor = false;
             this.btn_sair.Click += new System.EventHandler(this.btn_sair_Click);
@@ -153,7 +154,9 @@
             this.Controls.Add(this.btn_criptar);
             this.Controls.Add(this.txt_chave);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Criptografia PSG";
             this.ResumeLayout(false);
             this.PerformLayout();
