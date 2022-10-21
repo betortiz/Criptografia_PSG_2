@@ -81,6 +81,7 @@
             this.txt_cripto.Location = new System.Drawing.Point(12, 38);
             this.txt_cripto.Multiline = true;
             this.txt_cripto.Name = "txt_cripto";
+            this.txt_cripto.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txt_cripto.Size = new System.Drawing.Size(428, 97);
             this.txt_cripto.TabIndex = 2;
             this.txt_cripto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.btn_criptar_KeyPress);
@@ -91,6 +92,7 @@
             this.txt_decripto.Location = new System.Drawing.Point(12, 141);
             this.txt_decripto.Multiline = true;
             this.txt_decripto.Name = "txt_decripto";
+            this.txt_decripto.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txt_decripto.Size = new System.Drawing.Size(428, 90);
             this.txt_decripto.TabIndex = 7;
             // 

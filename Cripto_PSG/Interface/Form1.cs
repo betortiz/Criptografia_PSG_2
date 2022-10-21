@@ -22,11 +22,15 @@ namespace Cripto_PSG
 
         private void btn_criptar_Click(object sender, EventArgs e)
         {
-            controller.Criptar(txt_chave, txt_cripto, txt_decripto);
+            string cripto = "+";
+
+            controller.Criptar(txt_chave, txt_cripto, txt_decripto, cripto);
         }
         private void btn_decriptar_Click(object sender, EventArgs e)
         {
-            controller.Decriptar(txt_chave, txt_cripto, txt_decripto);
+            string cripto = "-";
+
+            controller.Criptar(txt_chave, txt_cripto, txt_decripto, cripto);
         }
         private void txt_chave_KeyPress(object sender, KeyPressEventArgs e)
         {
