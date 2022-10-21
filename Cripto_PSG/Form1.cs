@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Cripto_PSG.Cotroller;
 
 namespace Cripto_PSG
 {
@@ -29,39 +30,14 @@ namespace Cripto_PSG
 
         private void btn_criptar_Click(object sender, EventArgs e)
         {
-            if (txt_chave.Text == string.Empty)
-            {
-                txt_chave.Text = "1";
-            }
-
-            int chave = Convert.ToInt32(txt_chave.Text);
-
-            txt_decripto.Text = String.Empty;
-            for (int i = 0; i < txt_cripto.Text.Length; i++)
-            {
-                int txtUsuario = (int)txt_cripto.Text[i];
-                int txtCifrado = txtUsuario + chave;
-                txt_decripto.Text += char.ConvertFromUtf32(txtCifrado);
-                Clipboard.SetText(txt_decripto.Text);
-            }
+            Funcionalidade cripto = new Funcionalidade();
+            cripto.Criptar(txt_chave, txt_cripto, txt_decripto);
         }
 
         private void btn_decriptar_Click(object sender, EventArgs e)
         {
-            if (txt_chave.Text == string.Empty)
-            {
-                txt_chave.Text = "1";
-            }
-
-            int chave = Convert.ToInt32(txt_chave.Text);
-
-            txt_decripto.Text = String.Empty;
-            for (int i = 0; i < txt_cripto.Text.Length; i++)
-            {
-                int txtUsuario = (int)txt_cripto.Text[i];
-                int txtCifrado = txtUsuario - chave;
-                txt_decripto.Text += char.ConvertFromUtf32(txtCifrado);
-            }
+            Funcionalidade decripto = new Funcionalidade();
+            decripto.Decriptar(txt_chave, txt_cripto, txt_decripto);
         }
 
         private void txt_chave_KeyPress(object sender, KeyPressEventArgs e)
@@ -81,15 +57,14 @@ namespace Cripto_PSG
 
         private void btn_limpar_Click(object sender, EventArgs e)
         {
-            txt_chave.Text = String.Empty;
-            txt_cripto.Text = String.Empty;
-            txt_decripto.Text = String.Empty;
+            Funcionalidade lmp1 = new Funcionalidade();
+            lmp1.Limpar(txt_chave, txt_cripto, txt_decripto);
         }
 
         private void btn_sair_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Deseja sair da aplicação?", "SAIR", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No) return;
-            Application.Exit();
+            Funcionalidade s1 = new Funcionalidade();
+            s1.Sair();
         }
 
         private void btn_criptar_KeyPress(object sender, KeyPressEventArgs e)
