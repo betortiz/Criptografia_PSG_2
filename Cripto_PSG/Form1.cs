@@ -18,22 +18,16 @@ namespace Cripto_PSG
             InitializeComponent();
         }
 
-        public void message_validator()
-        {
-            DialogResult r5 = MessageBox.Show("Digite apenas números de 1 a 9!",
-                 "Mensagem de aviso", MessageBoxButtons.OK,
-                 MessageBoxIcon.Question,
-                 MessageBoxDefaultButton.Button1);
-
-        }
-
-
         private void btn_criptar_Click(object sender, EventArgs e)
         {
             Funcionalidade cripto = new Funcionalidade();
             cripto.Criptar(txt_chave, txt_cripto, txt_decripto);
         }
-
+        private void btn_decriptar_Click(object sender, EventArgs e)
+        {
+            Funcionalidade decriptar = new Funcionalidade();
+            decriptar.Decriptar(txt_chave, txt_cripto, txt_decripto);
+        }
         private void txt_chave_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == '0')
@@ -48,17 +42,20 @@ namespace Cripto_PSG
                 DialogResult dn = MessageBox.Show("Somente números", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
-
         private void btn_limpar_Click(object sender, EventArgs e)
         {
             Funcionalidade lmp1 = new Funcionalidade();
             lmp1.Limpar(txt_chave, txt_cripto, txt_decripto);
         }
-
         private void btn_sair_Click(object sender, EventArgs e)
         {
             Funcionalidade s1 = new Funcionalidade();
             s1.Sair();
+        }
+        public void message_validator()
+        {
+            Funcionalidade msg1 = new Funcionalidade();
+            msg1.MensagemValidar();
         }
         private void btn_criptar_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -75,10 +72,6 @@ namespace Cripto_PSG
                 message_validator();
             }
         }
-        private void btn_decriptar_Click(object sender, EventArgs e)
-        {
-            Funcionalidade decriptar = new Funcionalidade();
-            decriptar.Decriptar(txt_chave, txt_cripto, txt_decripto);
-        }
+
     }
 }

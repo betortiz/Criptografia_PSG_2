@@ -14,7 +14,6 @@ namespace Cripto_PSG.Cotroller
             if (MessageBox.Show("Deseja sair da aplicação?", "SAIR", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No) return;
             Application.Exit();
         }
-
         internal void Criptar(TextBox txt_chave, TextBox txt_cripto, TextBox txt_decripto)
         {
             if (txt_chave.Text == string.Empty)
@@ -56,6 +55,13 @@ namespace Cripto_PSG.Cotroller
             txt_chave.Text = String.Empty;
             txt_cripto.Text = String.Empty;
             txt_decripto.Text = String.Empty;
+        }
+        internal void MensagemValidar()
+        {
+            DialogResult r5 = MessageBox.Show("Digite apenas números de 1 a 9!",
+                 "Mensagem de aviso", MessageBoxButtons.OK,
+                 MessageBoxIcon.Question,
+                 MessageBoxDefaultButton.Button1);
         }
     }
 }
