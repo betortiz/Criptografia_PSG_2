@@ -33,7 +33,7 @@ namespace Cripto_PSG.Cotroller
                 Clipboard.SetText(txt_decripto.Text);
             }
         }
-        internal void Decriptar(TextBox txt_chave, TextBox txt_decripto, TextBox txt_cripto)
+        internal void Decriptar(TextBox txt_chave,TextBox txt_cripto, TextBox txt_decripto)
         {
             if (txt_chave.Text == string.Empty)
             {
@@ -43,14 +43,14 @@ namespace Cripto_PSG.Cotroller
             int chave = Convert.ToInt32(txt_chave.Text);
 
             txt_decripto.Text = String.Empty;
+
             for (int i = 0; i < txt_cripto.Text.Length; i++)
             {
                 int txtUsuario = (int)txt_cripto.Text[i];
                 int txtCifrado = txtUsuario - chave;
                 txt_decripto.Text += char.ConvertFromUtf32(txtCifrado);
             }
-        }
-        
+        }        
         internal void Limpar(TextBox txt_chave, TextBox txt_cripto, TextBox txt_decripto)
         {
             txt_chave.Text = String.Empty;

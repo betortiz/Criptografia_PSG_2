@@ -34,9 +34,9 @@
             this.lbl_1 = new System.Windows.Forms.Label();
             this.txt_cripto = new System.Windows.Forms.TextBox();
             this.txt_decripto = new System.Windows.Forms.TextBox();
-            this.btn_decriptar = new System.Windows.Forms.Button();
             this.btn_limpar = new System.Windows.Forms.Button();
             this.btn_sair = new System.Windows.Forms.Button();
+            this.btn_decriptar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txt_chave
@@ -94,21 +94,6 @@
             this.txt_decripto.Size = new System.Drawing.Size(428, 90);
             this.txt_decripto.TabIndex = 7;
             // 
-            // btn_decriptar
-            // 
-            this.btn_decriptar.BackColor = System.Drawing.Color.White;
-            this.btn_decriptar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
-            this.btn_decriptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_decriptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_decriptar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(169)))), ((int)(((byte)(153)))));
-            this.btn_decriptar.Location = new System.Drawing.Point(133, 235);
-            this.btn_decriptar.Name = "btn_decriptar";
-            this.btn_decriptar.Size = new System.Drawing.Size(76, 30);
-            this.btn_decriptar.TabIndex = 4;
-            this.btn_decriptar.Text = "Decriptar";
-            this.btn_decriptar.UseVisualStyleBackColor = false;
-            this.btn_decriptar.Click += new System.EventHandler(this.btn_decriptar_Click);
-            // 
             // btn_limpar
             // 
             this.btn_limpar.BackColor = System.Drawing.Color.White;
@@ -139,15 +124,30 @@
             this.btn_sair.UseVisualStyleBackColor = false;
             this.btn_sair.Click += new System.EventHandler(this.btn_sair_Click);
             // 
+            // btn_decriptar
+            // 
+            this.btn_decriptar.BackColor = System.Drawing.Color.White;
+            this.btn_decriptar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
+            this.btn_decriptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_decriptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_decriptar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(169)))), ((int)(((byte)(153)))));
+            this.btn_decriptar.Location = new System.Drawing.Point(128, 235);
+            this.btn_decriptar.Name = "btn_decriptar";
+            this.btn_decriptar.Size = new System.Drawing.Size(80, 30);
+            this.btn_decriptar.TabIndex = 8;
+            this.btn_decriptar.Text = "Decriptar";
+            this.btn_decriptar.UseVisualStyleBackColor = false;
+            this.btn_decriptar.Click += new System.EventHandler(this.btn_decriptar_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(169)))), ((int)(((byte)(153)))));
             this.ClientSize = new System.Drawing.Size(452, 271);
+            this.Controls.Add(this.btn_decriptar);
             this.Controls.Add(this.btn_sair);
             this.Controls.Add(this.btn_limpar);
-            this.Controls.Add(this.btn_decriptar);
             this.Controls.Add(this.txt_decripto);
             this.Controls.Add(this.txt_cripto);
             this.Controls.Add(this.lbl_1);
@@ -170,9 +170,9 @@
         private System.Windows.Forms.Label lbl_1;
         private System.Windows.Forms.TextBox txt_cripto;
         private System.Windows.Forms.TextBox txt_decripto;
-        private System.Windows.Forms.Button btn_decriptar;
         private System.Windows.Forms.Button btn_limpar;
         private System.Windows.Forms.Button btn_sair;
+        private System.Windows.Forms.Button btn_decriptar;
     }
 }
 

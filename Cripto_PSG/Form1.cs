@@ -34,12 +34,6 @@ namespace Cripto_PSG
             cripto.Criptar(txt_chave, txt_cripto, txt_decripto);
         }
 
-        private void btn_decriptar_Click(object sender, EventArgs e)
-        {
-            Funcionalidade decripto = new Funcionalidade();
-            decripto.Decriptar(txt_chave, txt_cripto, txt_decripto);
-        }
-
         private void txt_chave_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == '0')
@@ -66,7 +60,6 @@ namespace Cripto_PSG
             Funcionalidade s1 = new Funcionalidade();
             s1.Sair();
         }
-
         private void btn_criptar_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == (char)13)
@@ -74,7 +67,6 @@ namespace Cripto_PSG
                 btn_criptar_Click(sender, e);
             }
         }
-
         private void txt_chave_TextChanged(object sender, EventArgs e)
         {
             if (txt_chave.Text.Length > 1)
@@ -82,6 +74,11 @@ namespace Cripto_PSG
                 txt_chave.Text = String.Empty;
                 message_validator();
             }
+        }
+        private void btn_decriptar_Click(object sender, EventArgs e)
+        {
+            Funcionalidade decriptar = new Funcionalidade();
+            decriptar.Decriptar(txt_chave, txt_cripto, txt_decripto);
         }
     }
 }
