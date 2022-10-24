@@ -25,15 +25,17 @@ namespace Cripto_PSG.Controller
 
             txt_decripto.Text = String.Empty;
             int txtCifrado;
+
+
             for (int i = 0; i < txt_cripto.Text.Length; i++)
             {
                 int txtUsuario = (int)txt_cripto.Text[i];
-
                 txtCifrado = txtUsuario + (chave * cripto);
                 txt_decripto.Text += char.ConvertFromUtf32(txtCifrado);
                
-                Clipboard.SetText(txt_decripto.Text);
+               
             }
+            Clipboard.SetText(txt_decripto.Text);
         }
        
                 
