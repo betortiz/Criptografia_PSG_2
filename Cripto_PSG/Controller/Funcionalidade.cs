@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Cripto_PSG.Cotroller
+namespace Cripto_PSG.Controller
 {
     internal class Funcionalidade
     {

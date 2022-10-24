@@ -46,7 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cotroller\Funcionalidade.cs" />
+    <Compile Include="Controller\Funcionalidade.cs" />
     <Compile Include="Interface\Form1.cs">
       <SubType>Form</SubType>
     </Compile>

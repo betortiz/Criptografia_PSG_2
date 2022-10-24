@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Cripto_PSG.Cotroller;
+using Cripto_PSG.Controller;
 
 namespace Cripto_PSG
 {
