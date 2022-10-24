@@ -88,7 +88,6 @@
             // 
             // txt_decripto
             // 
-            this.txt_decripto.Enabled = false;
             this.txt_decripto.Location = new System.Drawing.Point(12, 141);
             this.txt_decripto.Multiline = true;
             this.txt_decripto.Name = "txt_decripto";
