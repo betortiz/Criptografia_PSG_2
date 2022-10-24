@@ -25,12 +25,12 @@ namespace Cripto_PSG.Controller
 
             txt_decripto.Text = String.Empty;
             int txtCifrado;
-
+            int aux = chave * cripto;
 
             for (int i = 0; i < txt_cripto.Text.Length; i++)
             {
                 int txtUsuario = (int)txt_cripto.Text[i];
-                txtCifrado = txtUsuario + (chave * cripto);
+                txtCifrado = txtUsuario + aux;
                 txt_decripto.Text += char.ConvertFromUtf32(txtCifrado);
                
                
