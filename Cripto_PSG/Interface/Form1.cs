@@ -22,13 +22,13 @@ namespace Cripto_PSG
 
         private void btn_criptar_Click(object sender, EventArgs e)
         {
-            string cripto = "+";
+            int cripto = +1;
 
             controller.Criptar(txt_chave, txt_cripto, txt_decripto, cripto);
         }
         private void btn_decriptar_Click(object sender, EventArgs e)
         {
-            string cripto = "-";
+            int cripto = -1;
 
             controller.Criptar(txt_chave, txt_cripto, txt_decripto, cripto);
         }
