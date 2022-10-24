@@ -51,7 +51,7 @@
             // 
             // btn_criptar
             // 
-            this.btn_criptar.BackColor = System.Drawing.Color.White;
+            this.btn_criptar.BackColor = System.Drawing.Color.Black;
             this.btn_criptar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
             this.btn_criptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_criptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -69,7 +69,7 @@
             // 
             this.lbl_1.AutoSize = true;
             this.lbl_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_1.ForeColor = System.Drawing.Color.White;
+            this.lbl_1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(168)))), ((int)(((byte)(153)))));
             this.lbl_1.Location = new System.Drawing.Point(68, 12);
             this.lbl_1.Name = "lbl_1";
             this.lbl_1.Size = new System.Drawing.Size(273, 17);
@@ -96,7 +96,7 @@
             // 
             // btn_limpar
             // 
-            this.btn_limpar.BackColor = System.Drawing.Color.White;
+            this.btn_limpar.BackColor = System.Drawing.Color.Black;
             this.btn_limpar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
             this.btn_limpar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_limpar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -111,7 +111,7 @@
             // 
             // btn_sair
             // 
-            this.btn_sair.BackColor = System.Drawing.Color.White;
+            this.btn_sair.BackColor = System.Drawing.Color.Black;
             this.btn_sair.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
             this.btn_sair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_sair.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -126,7 +126,7 @@
             // 
             // btn_decriptar
             // 
-            this.btn_decriptar.BackColor = System.Drawing.Color.White;
+            this.btn_decriptar.BackColor = System.Drawing.Color.Black;
             this.btn_decriptar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
             this.btn_decriptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_decriptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -143,7 +143,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(169)))), ((int)(((byte)(153)))));
+            this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(452, 271);
             this.Controls.Add(this.btn_decriptar);
             this.Controls.Add(this.btn_sair);
