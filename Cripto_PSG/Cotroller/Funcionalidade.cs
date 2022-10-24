@@ -14,7 +14,7 @@ namespace Cripto_PSG.Cotroller
             if (MessageBox.Show("Deseja sair da aplicação?", "SAIR", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No) return;
             Application.Exit();
         }
-        internal void Criptar(TextBox txt_chave, TextBox txt_cripto, TextBox txt_decripto)
+        internal void Criptar(TextBox txt_chave, TextBox txt_cripto, TextBox txt_decripto, string cripto)
         {
             if (txt_chave.Text == string.Empty)
             {
@@ -24,32 +24,30 @@ namespace Cripto_PSG.Cotroller
             int chave = Convert.ToInt32(txt_chave.Text);
 
             txt_decripto.Text = String.Empty;
+            int txtCifrado;
             for (int i = 0; i < txt_cripto.Text.Length; i++)
             {
                 int txtUsuario = (int)txt_cripto.Text[i];
-                int txtCifrado = txtUsuario + chave;
-                txt_decripto.Text += char.ConvertFromUtf32(txtCifrado);
+                
+              
+                
+                if (cripto == "-")
+                {
+                    txtCifrado = txtUsuario - chave;
+                    txt_decripto.Text += char.ConvertFromUtf32(txtCifrado);
+                }
+
+                if (cripto == "+")
+                {
+
+                    txtCifrado = txtUsuario + chave;
+                    txt_decripto.Text += char.ConvertFromUtf32(txtCifrado);
+                }
                 Clipboard.SetText(txt_decripto.Text);
             }
         }
-        internal void Decriptar(TextBox txt_chave,TextBox txt_cripto, TextBox txt_decripto)
-        {
-            if (txt_chave.Text == string.Empty)
-            {
-                txt_chave.Text = "1";
-            }
-
-            int chave = Convert.ToInt32(txt_chave.Text);
-
-            txt_decripto.Text = String.Empty;
-
-            for (int i = 0; i < txt_cripto.Text.Length; i++)
-            {
-                int txtUsuario = (int)txt_cripto.Text[i];
-                int txtCifrado = txtUsuario - chave;
-                txt_decripto.Text += char.ConvertFromUtf32(txtCifrado);
-            }
-        }        
+       
+                
         internal void Limpar(TextBox txt_chave, TextBox txt_cripto, TextBox txt_decripto)
         {
             txt_chave.Text = String.Empty;
