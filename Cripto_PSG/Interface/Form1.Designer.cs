@@ -179,7 +179,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(89, 18);
             this.label2.TabIndex = 10;
-            this.label2.Text = "Resultado ";
+            this.label2.Text = "Resultado:";
             // 
             // Form1
             // 
