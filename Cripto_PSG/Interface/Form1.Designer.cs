@@ -54,6 +54,7 @@
             this.txt_chave.Size = new System.Drawing.Size(40, 24);
             this.txt_chave.TabIndex = 1;
             this.txt_chave.Tag = "";
+            this.txt_chave.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txt_chave.TextChanged += new System.EventHandler(this.txt_chave_TextChanged);
             this.txt_chave.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_chave_KeyPress);
             // 
@@ -179,7 +180,6 @@
             this.label2.Size = new System.Drawing.Size(89, 18);
             this.label2.TabIndex = 10;
             this.label2.Text = "Resultado ";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // Form1
             // 

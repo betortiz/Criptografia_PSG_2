@@ -73,10 +73,5 @@ namespace Cripto_PSG
                 message_validator();
             }
         }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
