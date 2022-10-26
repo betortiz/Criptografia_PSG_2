@@ -37,8 +37,7 @@ namespace Cripto_PSG.Controller
 
                 int txtUsuario = (int)txt_cripto.Text[i];
                 txtCifrado = txtUsuario + aux;
-                txt_decripto.Text += char.ConvertFromUtf32(txtCifrado);
-                
+                txt_decripto.Text += char.ConvertFromUtf32(txtCifrado);              
 
             }
             if (txt_decripto.Text != String.Empty)
