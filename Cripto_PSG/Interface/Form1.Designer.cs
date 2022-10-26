@@ -48,7 +48,7 @@
             this.txt_chave.BackColor = System.Drawing.SystemColors.InfoText;
             this.txt_chave.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_chave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(169)))), ((int)(((byte)(153)))));
-            this.txt_chave.Location = new System.Drawing.Point(26, 58);
+            this.txt_chave.Location = new System.Drawing.Point(29, 58);
             this.txt_chave.MaxLength = 2;
             this.txt_chave.Name = "txt_chave";
             this.txt_chave.Size = new System.Drawing.Size(40, 24);
@@ -91,6 +91,7 @@
             this.txt_cripto.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_cripto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(169)))), ((int)(((byte)(153)))));
             this.txt_cripto.Location = new System.Drawing.Point(29, 167);
+            this.txt_cripto.MaxLength = 512;
             this.txt_cripto.Multiline = true;
             this.txt_cripto.Name = "txt_cripto";
             this.txt_cripto.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
